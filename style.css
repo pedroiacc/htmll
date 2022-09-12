@@ -1,0 +1,321 @@
+*{
+   padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+/*inicio del nav*/
+.nav{
+    background: rgb(200,200,200);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 50%, rgba(0,0,0,1) 100%);
+    min-height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgba(0, 0, 252, 0.664);
+}   
+.nav__ul{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.nav__ul li{
+    border-radius: 13px;
+    margin: 0 5px;
+}
+.nav__ul li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    transition: all;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.nav__ul li:hover, li.active {
+    background-color: rgba(255, 250, 250, 0.048);
+    transition: .4s;
+    transform: translate(6px);
+}
+.nav__ul__li{
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+ul.show{
+    top: 65px;
+}
+@media (max-width: 720){
+    .nav{
+        flex-direction: column;
+    }
+    .nav__ul{
+        padding: 10px 0px;
+    }
+}
+/*fin del nav*/
+/*section home*/
+.home{
+    width: 100%;
+    padding: 3px;
+    display: flex;
+    background: rgb(255, 255, 255);
+    display: grid;
+}
+.home__nosotros__ul{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    padding-left: 13%;
+}
+.home__nosotros__ul a{
+    margin: 0 50px;
+    border-radius: 10px;
+}
+.home__nosotros__ul li:hover, li:active{
+    transition: .5s;
+    transform: translate(20px, 10px);
+}
+@media (max-width: 720){
+    .home{
+        flex-direction: column;
+    }
+    .home__nosotros__ul{
+        padding: 10px 0px;
+    }
+}
+/*comienzo de sneaker*/
+.sneaker{
+    background-image: url(https://drops-ba.com/wp-content/uploads/2021/07/BannerSHOP-scaled.jpg);
+	padding-top: 150px;
+	padding-bottom: 150px;
+    text-align: center;
+	padding: 175px 0 175px 0;
+	margin: 0;
+	border: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #f1f2f4;
+}
+.sneaker__div{
+    display: block; 
+}
+.sneaker__div h1, p{
+    font-family: 'Georama', sans-serif;
+    line-height: 1.8;
+    text-transform: none;
+    text-decoration: double;
+    color: rgba(247, 247, 247, 0.781);
+    margin: 0;
+}
+/*comienzo de vans*/
+.vans{
+    display: grid;
+    grid-template-columns: 700px 700px 700px;
+    
+}
+.banner__vans{
+margin-left: 35px;
+padding-top: 10 px;
+}
+.vans__old{
+    margin: 40px;
+}
+.vans__old__h23{
+    margin-left: 11%;
+    font-family: 'Georama', sans-serif;
+}
+.vans__old__h22{
+    margin-left: 15%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.vans__old__h21{
+    margin-left: 7%;
+}
+.vans__old__h3{
+    margin-left: 22%;
+}
+/*adidas*/
+.img__adidas{
+    margin-left: 35px;
+}
+.adidas{
+    display: grid;
+    grid-template-columns: 37% 37% 37%;
+}
+/*nike*/
+.nike__img{
+    margin-left: 35px;
+}
+.nike{
+    display: grid;
+    grid-template-columns: 37% 37% 37%;
+}
+/*boton comprar*/
+.boton.cinco a {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 40%;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boton.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton.cinco svg {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+.boton.cinco:hover {
+	background: #b98f04;
+}
+
+.boton.cinco:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.boton.cinco:hover a {
+	left: 20px;
+}
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 55%;
+	height: 80px;
+	background: #141414;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 9px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton a {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+/*boton 2*/
+.boton.cincoa a {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 40%;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boton.cincoa .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+.boton.cincoa svg {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+.boton.cincoa:hover {
+	background: #a34900;
+}
+
+.boton.cincoa:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.boton.cincoa:hover a {
+	left: 20px;
+}
+/*footer*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
